@@ -15,7 +15,7 @@ app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY", "freelance-ai-secret-2024")
 
 # ── Gemini Configuration ────────────────────────────────────────────────────
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "AIzaSyCOBp20mVcT7sh3xYfy-ImfzgVxSW4YRtU")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "Your_key")
 genai.configure(api_key=GEMINI_API_KEY)
 
 # Model config  (Temperature=0.7 for creative proposals; top_p=0.9)
